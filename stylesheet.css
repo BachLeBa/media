@@ -1,0 +1,82 @@
+body{
+    background-color: lightgray;
+}
+div{
+    font-size: 15pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#div1{
+    border: solid;
+    width: 45vw;
+    height: 30vh;
+    margin: auto;
+    margin-bottom: 100pt;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+#div2{
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+.ha{
+    border: solid;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#d1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8gLp_wq8xBmTF1GCdSsEZGuygAmeuV0OTjQ&s);
+    background-size: cover;
+    background-position: center;
+}
+#d2{
+    background-image: url(https://thegioipetcanh.com/wp-content/uploads/2023/08/meo-long-ngan-tai-cup-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#d3{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Pacific_double-saddle_butterflyfish_%28Chaetodon_ulietensis%29_and_other_Chaetodon_Moorea.jpg/1200px-Pacific_double-saddle_butterflyfish_%28Chaetodon_ulietensis%29_and_other_Chaetodon_Moorea.jpg);
+    background-size: cover;
+    background-position: center;
+}
+p::before{
+    text-align: center;
+    content: "Change the window width";
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-weight:bold;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+@media screen and (max-width: 600pt){
+   
+#d1{
+    grid-column: 2;
+    grid-row: 1;
+}
+#d2{
+    grid-column: 3;
+    grid-row: 1;
+}
+#d3{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+p::before{
+    content: "See the change";
+}
+
+}
